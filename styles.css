@@ -17,6 +17,17 @@ body {
 
 input {
     height: 30px;
+    border: 2px solid #e5e7eb;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 2px solid teal;
+    box-shadow: 5px 5px 10px gray;
+    outline: none;
 }
 
 .left {
@@ -106,6 +117,7 @@ input {
 .question {
     display: flex;
     flex-direction: column;
+    row-gap: 2px;
     /* background-color: gray; */
     /* border: 1px solid red; */
     width: 30vw;

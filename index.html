@@ -7,6 +7,7 @@
         <link href="styles.css" rel="stylesheet" />
     </head>
     <body>
+        <script src="script.js" defer></script>
         <div class="left">
             <img
                 src="Images/wet-ferns.jpg"
@@ -60,9 +61,11 @@
                         <div class="question">
                             <label for="password">PASSWORD</label>
                             <input
+                                minlength="8"
                                 id="password"
                                 type="password"
                                 name="password"
+                                required
                             />
                         </div>
                         <div class="question">
@@ -70,9 +73,11 @@
                                 >CONFIRM PASSWORD</label
                             >
                             <input
+                                minlength="8"
                                 id="confirmpassword"
                                 type="password"
                                 name="confirmpassword"
+                                required
                             />
                         </div>
                     </div>
