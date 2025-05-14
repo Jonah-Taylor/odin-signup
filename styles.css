@@ -37,7 +37,9 @@ input {
     min-width: 100%;
 }
 
-.odin-icon {
+.odin {
+    display: flex;
+    align-items: center;
     box-sizing: content-box;
     position: static;
     z-index: 1;
@@ -47,21 +49,49 @@ input {
     background-color: rgba(0, 0, 0, 0.5);
     padding-left: 50%;
     padding-right: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    font-size: 20vh;
+}
+
+.odin-icon {
+    box-sizing: content-box;
+    position: static;
+    z-index: 1;
+    width: auto;
+    height: 100%;
 }
 
 .right {
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     height: 100vh;
     width: 60vw;
-    background-color: #eeeeee;
+    background-color: #f4f4f4;
+}
+
+.right-text {
+    width: 90%;
+    height: 20%;
+    margin: 4%;
+    margin-left: 3vw;
+    margin-top: 8%;
 }
 
 .sign-up-form {
+    margin-top: 4vh;
+}
+
+.letsdothis {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3vw;
 }
 
 .whitebkg {
     background-color: white;
-    box-shadow: 0px 0px 25px black;
+    box-shadow: 5px 5px 25px #444444;
 }
 
 .question-container {
@@ -69,15 +99,44 @@ input {
     flex-wrap: wrap;
     justify-content: left;
     height: 30vh;
+    font-size: 14px;
+    color: #222;
 }
 
 .question {
     display: flex;
     flex-direction: column;
-    background-color: gray;
-    border: 1px solid red;
+    /* background-color: gray; */
+    /* border: 1px solid red; */
     width: 30vw;
     height: auto;
-    padding-left: 2vw;
+    padding-left: 3vw;
     padding-right: 10vw;
+}
+
+.create-account {
+    border: 0px;
+    border-radius: 10px;
+    background-color: #596d48;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5vh;
+    margin-bottom: 2vh;
+    padding: 1vw;
+    width: 15vw;
+}
+
+.have-an-account {
+    padding-left: 3vw;
+    padding-top: 2%;
+    font-size: 14px;
+}
+
+log-in:link {
+    color: green;
+}
+
+.log-in:visited {
+    color: darkgreen;
 }
